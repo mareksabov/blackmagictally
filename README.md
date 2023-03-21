@@ -16,6 +16,13 @@
 - Zvolit Tools > UploadSpeed: 1500000
 - Zvolit Tools > Port : COM port na ktory je pripojeny board
 
+### Install requider libraries
+
+- v zlozke ```requiderLibraries``` su upravene kniznice pre Esp32
+- Tieto kniznice treba nakopirovat do {Arduino Libraries}
+- {Arduino Libraries} cestu zistime tak, ze pozrieme File > Preferences > Sketchbook location a k ceste pridame \libraries
+
+
 ## Sketch Edit
 
 ### Zmena Client ip
@@ -37,4 +44,4 @@
 
 ### Zmena Camera Id
 36: ```int cameraNumber = 1;```
-- zmenic cislo kamery pre konkretny tally light
+- zmenit cislo kamery pre konkretny tally light
