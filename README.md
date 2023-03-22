@@ -42,6 +42,18 @@
 34: ```const char* password =  "wifiPassword";```
 - nastavit wifi heslo
 
-### Zmena Camera Id
-36: ```int cameraNumber = 1;```
-- zmenit cislo kamery pre konkretny tally light
+### Zmena Camera Id po zapnuti
+37: ```int cameraNumber = 1;```
+- zmenit cislo kamery ktore sa nastavi po zapnuti tally light
+
+### Zmena Max Camera Id
+39: ```int maxCameraNumber = 4;```
+- zmenit maximalne mozne cislo kamery, po presiahnuti tohto cisla sa cameraNumber prepne naspat na 1
+
+## Ovladanie
+
+- Po spusteni sa Tally light automaticky pripoji k wifine nastavenej v kode.
+- Po pripojeni k wifi sa na displeji zobrazi nastavene cislo kamery.
+- V pripade ze je display cierny, sa Tally nedokazalo pripojit k wifi
+- Stlacenim a podrzanim Tlacitka A, sa zmeni cislo kamery smerom hore, Display preblikne oranzovou farbou pre upozornenie
+- Po dosiahnuti maximalneho cisla kamery, sa dalsim stlacenim Tlacitka A nastavi znovu cislo 1
