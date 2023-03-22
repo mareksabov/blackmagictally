@@ -26,10 +26,10 @@ IPAddress switcherIp(192, 168, 0, 60);	      // IP address of the ATEM switcher
 ATEMstd AtemSwitcher;
 
 // http://www.barth-dev.de/online/rgb565-color-picker/
-#define GRAY  0x2104 //   8  8  8
-#define GREEN 0x0200 //   0 64  0
-#define RED   0xF800 // 255  0  0
-#define ORANGE 0xFDC0 // 255 187 0
+#define GRAY  0x2104 //   32   32   32
+#define GREEN 0x0200 //   0    64   0
+#define RED   0xF800 //   255  0    0
+#define ORANGE 0xFDC0 //  255  187  0
 
 const char* ssid = "wifiSSID";
 const char* password =  "wifiPassword";
@@ -74,6 +74,7 @@ void loop() {
   // Check for packets, respond to them etc. Keeping the connection alive!
   AtemSwitcher.runLoop();
 
+  // Changing camera number when btn A is pressed
   M5.update();
 
   bool cameraNumberChanged = false;
@@ -89,6 +90,7 @@ void loop() {
     delay(50);
   }
 
+  //Tally light functionality
   int ProgramTally = AtemSwitcher.getProgramTally(cameraNumber);
   int PreviewTally = AtemSwitcher.getPreviewTally(cameraNumber);
 
