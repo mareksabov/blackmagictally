@@ -47,7 +47,7 @@
 - zmenit cislo kamery ktore sa nastavi po zapnuti tally light
 
 ### Zmena Max Camera Id
-39: ```int maxCameraNumber = 4;```
+39: ```int maxCameraNumber = 8;```
 - zmenit maximalne mozne cislo kamery, po presiahnuti tohto cisla sa cameraNumber prepne naspat na 1
 
 ## Ovladanie

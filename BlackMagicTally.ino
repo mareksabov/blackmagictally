@@ -36,7 +36,7 @@ const char* password =  "wifiPassword";
 
 int cameraNumber = 1;
 int startCameraNumber = 1;
-int maxCameraNumber = 4;
+int maxCameraNumber = 8;
 
 int ledPin = 10;
 
