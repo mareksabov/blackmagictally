@@ -53,6 +53,7 @@
 ## Ovladanie
 
 - Po spusteni sa Tally light automaticky pripoji k wifine nastavenej v kode.
+- Pocas pripajania svieti na modrej obrazovke 0
 - Po pripojeni k wifi sa na displeji zobrazi nastavene cislo kamery.
 - V pripade ze je display cierny, sa Tally nedokazalo pripojit k wifi
 - Stlacenim a podrzanim Tlacitka A, sa zmeni cislo kamery smerom hore, Display preblikne oranzovou farbou pre upozornenie
