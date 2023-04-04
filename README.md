@@ -35,19 +35,15 @@
 - nastavit ip adresu ATEM switcheru
 
 ### Zmena Wifi SSID
-33: ```const char* ssid = "wifiSSID";```
+35: ```const char* ssid = "wifiSSID";```
 - nastavit wifi SSID
 
 ### Zmena Wifi Password
-34: ```const char* password =  "wifiPassword";```
+36: ```const char* password =  "wifiPassword";```
 - nastavit wifi heslo
 
-### Zmena Camera Id po zapnuti
-37: ```int cameraNumber = 1;```
-- zmenit cislo kamery ktore sa nastavi po zapnuti tally light
-
 ### Zmena Max Camera Id
-39: ```int maxCameraNumber = 8;```
+40: ```int maxCameraNumber = 8;```
 - zmenit maximalne mozne cislo kamery, po presiahnuti tohto cisla sa cameraNumber prepne naspat na 1
 
 ## Ovladanie
