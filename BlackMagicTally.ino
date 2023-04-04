@@ -30,11 +30,12 @@ ATEMstd AtemSwitcher;
 #define GREEN 0x0200 //   0    64   0
 #define RED   0xF800 //   255  0    0
 #define ORANGE 0xFDC0 //  255  187  0
+#define BLUE 0x059F //    0    179  255
 
 const char* ssid = "wifiSSID";
 const char* password =  "wifiPassword";
 
-int cameraNumber = 1;
+int cameraNumber = 0;
 int startCameraNumber = 1;
 int maxCameraNumber = 8;
 
@@ -50,6 +51,10 @@ void setup() {
 
   // Start the Ethernet, Serial (debugging) and UDP:
   WiFi.begin(ssid, password);
+
+  drawLabel(BLUE, BLACK, HIGH);
+
+  cameraNumber = startCameraNumber;
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
