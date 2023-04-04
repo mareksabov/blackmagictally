@@ -50,11 +50,12 @@ void setup() {
   Serial.begin(9600);
 
   // Start the Ethernet, Serial (debugging) and UDP:
-  WiFi.begin(ssid, password);
+  M5.begin();
 
   drawLabel(BLUE, BLACK, HIGH);
-
   cameraNumber = startCameraNumber;
+
+  WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
@@ -63,7 +64,6 @@ void setup() {
   Serial.println("Connected to the WiFi network");
 
   // initialize the M5StickC object
-  M5.begin();
 
   pinMode(ledPin, OUTPUT);  // LED: 1 is on Program (Tally)
   digitalWrite(ledPin, HIGH); // off
