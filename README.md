@@ -57,3 +57,11 @@
 - V pripade ze je display cierny, sa Tally nedokazalo pripojit k wifi
 - Stlacenim a podrzanim Tlacitka A, sa zmeni cislo kamery smerom hore, Display preblikne oranzovou farbou pre upozornenie
 - Po dosiahnuti maximalneho cisla kamery, sa dalsim stlacenim Tlacitka A nastavi znovu cislo 1
+
+## FAQ
+
+### Chyby pri kompilacii
+
+#### exec: "python": executable file not found in $PATH
+- Overit ze je pythohn3 nainstalovany spustenim v terminali ```python3 --version```
+- Spustit v terminali prikaz ```sed -i -e 's/=python /=python3 /g' ~/Library/Arduino15/packages/esp32/hardware/esp32/*/platform.txt```
